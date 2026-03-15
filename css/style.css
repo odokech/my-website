@@ -1,124 +1,117 @@
-body{
-font-family: Arial;
+*{
 margin:0;
-background:#f4f4f4;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#f9f9f9;
+color:#333;
 }
 
 /* Header */
 
 header{
-background:#333;
+background:#111;
 color:white;
+padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 40px;
 }
-
-/* Navigation */
 
 nav a{
 color:white;
 text-decoration:none;
 margin-left:20px;
-font-weight:bold;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00bcd4;
 }
 
 /* Hero Section */
 
 .hero{
 text-align:center;
-background:#0077cc;
-color:white;
 padding:100px 20px;
+background:linear-gradient(135deg,#0077cc,#00bcd4);
+color:white;
+}
+
+.hero img{
+margin-top:20px;
+border-radius:50%;
+width:180px;
 }
 
 .hero button{
+margin-top:20px;
 padding:12px 25px;
 border:none;
 background:white;
 color:#0077cc;
-font-size:16px;
-border-radius:5px;
+font-weight:600;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+background:#111;
+color:white;
 }
 
 /* Sections */
 
 section{
-padding:40px;
-text-align:center;
-}
-
-/* Footer */
-
-footer{
-background:#333;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-@media (max-width: 768px) {
-
-header{
-flex-direction: column;
-text-align: center;
-}
-
-nav{
-margin-top:10px;
-}
-
-.hero{
 padding:60px 20px;
-}
-
-}
-
-img{
-margin-top:20px;
-border-radius:10px;
-}
-
-#about{
-background:#ffffff;
-}
-
-#contact{
-background:#e9e9e9;
+text-align:center;
 }
 
 #skills{
-background:#ffffff;
-text-align:center;
-padding:40px;
+background:white;
 }
 
 .skills-container{
 display:flex;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 gap:15px;
+margin-top:20px;
 }
 
 .skill{
 background:#0077cc;
 color:white;
 padding:10px 20px;
-border-radius:5px;
+border-radius:20px;
 }
 
-#projects{
-background:#f4f4f4;
-padding:40px;
-text-align:center;
-}
+/* Projects */
 
 .project{
 background:white;
 padding:20px;
-margin:15px auto;
-width:60%;
-border-radius:5px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+margin:20px auto;
+width:80%;
+max-width:500px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+padding:20px;
+margin-top:40px;
 }
